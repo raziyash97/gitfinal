@@ -1,0 +1,7 @@
+---
+- name: creating user first time
+  hosts: all
+  become: true
+  tasks:
+  - name: creating user task using user module
+    user: name=hari
